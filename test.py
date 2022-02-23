@@ -69,4 +69,6 @@ if __name__ == "__main__":
      
     print('====================END====================')
     print('execution time:' + str(time.time() - start_time)+'s')
+    print('====================Show===================')
+    print(context.encode('utf8'))
 
