@@ -20,7 +20,7 @@ jobs:
           command: pip install django~=3.0.3
       - run:
           name: Install python Request
-          command: pip install Request
+          command: pip install requests
       - run:
           name: Test
           command: python test.py Gossiping  2
