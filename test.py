@@ -47,9 +47,9 @@ if __name__ == "__main__":
         UrlPer = []
         for entry in soup.select('.r-ent'):
             atag = entry.select('.title')[0].find('a') 
-	    if(atag != None):
-               URL = atag['href']          
-               UrlPer.append('https://www.ptt.cc' + URL)   
+            if atag != None:
+                URL = atag['href']          
+                UrlPer.append('https://www.ptt.cc' + URL)   
         #需要反轉,因為網頁版最下面才是最新的文章
         for URL in reversed(UrlPer):
             URLlist.append(URL)   
@@ -69,3 +69,4 @@ if __name__ == "__main__":
      
     print('====================END====================')
     print('execution time:' + str(time.time() - start_time)+'s')
+
