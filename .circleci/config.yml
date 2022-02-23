@@ -26,4 +26,5 @@ jobs:
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
   main:
-    jobs: build-and-test
+    jobs: 
+     - build-and-test
